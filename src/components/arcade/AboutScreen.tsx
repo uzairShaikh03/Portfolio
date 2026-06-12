@@ -78,6 +78,22 @@ export function AboutScreen({ onBack }: AboutScreenProps) {
               {player.location}
             </p>
           </div>
+          <div>
+            <p className="font-[family-name:var(--font-pixel)] text-[6px] text-phosphor-dim/60 sm:text-[8px]">
+              EDUCATION
+            </p>
+            <p className="font-[family-name:var(--font-arcade)] text-lg text-phosphor-dim sm:text-xl">
+              {player.education}
+            </p>
+          </div>
+          <div>
+            <p className="font-[family-name:var(--font-pixel)] text-[6px] text-phosphor-dim/60 sm:text-[8px]">
+              HOBBIES
+            </p>
+            <p className="font-[family-name:var(--font-arcade)] text-lg text-phosphor-dim sm:text-xl">
+              {player.hobbies.join(" · ")}
+            </p>
+          </div>
 
           <div className="mt-2 space-y-1">
             {player.bio.map((line) => (

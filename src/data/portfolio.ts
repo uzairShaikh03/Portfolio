@@ -2,17 +2,19 @@ export const player = {
   name: "UZAIR SHAIKH",
   title: "SOFTWARE ENGINEER",
   tagline: "BUILDING DIGITAL WORLDS ONE LINE AT A TIME",
-  location: "EARTH, SECTOR 7",
+  location: "Toronto, ON",
+  education: "Student at McMaster University — Computer Science",
+  hobbies: ["Table Tennis", "Socializing", "Brawl Stars", "Building things"],
   bio: [
     "PLAYER 1 READY.",
-    "Full-stack developer passionate about clean code,",
-    "clever UX, and shipping products that matter.",
-    "Currently seeking new quests and co-op opportunities.",
+    "Computer science student who loves building things,",
+    "from full-stack apps to side projects that solve real problems.",
+    "Always down for a new quest or co-op opportunity.",
   ],
   links: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    email: "hello@example.com",
+    github: "https://github.com/uzairShaikh03",
+    linkedin: "https://www.linkedin.com/in/uzairshaikh07/",
+    email: "uzair.shaikh1207@gmail.com",
   },
 };
 
@@ -30,38 +32,18 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "proj-1",
-    title: "QUEST LOG ALPHA",
-    subtitle: "E-Commerce Platform",
+    title: "UNCLUTTER",
+    subtitle: "Smart Gmail Workspace",
     description:
-      "Built a full-stack marketplace with real-time inventory, payments, and admin dashboard. Reduced checkout friction by 40%.",
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
-    score: 98500,
-    demo: "#",
-    repo: "#",
-  },
-  {
-    id: "proj-2",
-    title: "BOSS RUSH API",
-    subtitle: "Microservices Backend",
-    description:
-      "Designed event-driven architecture handling 10K+ req/min. Auth, caching, and observability baked in from day one.",
-    tech: ["Node.js", "Redis", "Docker", "AWS"],
-    score: 87200,
-    demo: "#",
-    repo: "#",
-  },
-  {
-    id: "proj-3",
-    title: "PIXEL DASH",
-    subtitle: "Real-Time Collaboration App",
-    description:
-      "WebSocket-powered workspace with live cursors, CRDT sync, and sub-100ms updates across 50+ concurrent users.",
-    tech: ["React", "WebSockets", "Yjs", "Tailwind"],
-    score: 94100,
-    demo: "#",
-    repo: "#",
+      "Built an AI-powered Gmail organization platform using React, Node.js, Google OAuth, Gmail API, and Gemini. UnClutter automatically categorizes emails, generates summaries, and transforms cluttered inboxes into an intelligent card-based experience.",
+    tech: ["React", "Node.js", "Gmail API", "Gemini", "Supabase"],
+    score: 99500,
+    demo: "https://un-clutter.vercel.app/",
+    repo: "https://github.com/uzairShaikh03/UnClutter",
   },
 ];
+
+export const projectsComingSoon = "MORE PROJECTS GETTING ADDED...";
 
 export type Skill = {
   name: string;

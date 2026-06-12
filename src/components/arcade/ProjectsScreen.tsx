@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { projects, type Project } from "@/data/portfolio";
+import { projects, projectsComingSoon, type Project } from "@/data/portfolio";
 
 type ProjectsScreenProps = {
   selectedIndex: number;
@@ -72,6 +72,11 @@ export function ProjectsScreen({
               </button>
             </li>
           ))}
+          <li className="mt-2 border-t border-phosphor-dim/20 pt-2">
+            <p className="font-[family-name:var(--font-pixel)] text-[6px] leading-relaxed text-phosphor-dim/50 sm:text-[8px]">
+              {projectsComingSoon}
+            </p>
+          </li>
         </ul>
 
         {/* Game detail */}
